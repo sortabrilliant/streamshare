@@ -15,7 +15,7 @@ const { name, category, attributes } = metadata;
 
 registerBlockType( name, {
 	title: 'Twitch',
-	description: 'Embed a Twitch video.',
+	description: 'Embed content from Twitch.',
 	icon,
 	keywords: [ 'stream', 'video' ],
 	category,
