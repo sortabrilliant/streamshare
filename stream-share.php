@@ -51,7 +51,7 @@ function register_block() {
 		'stream-share',
 		plugins_url( $script_path, __FILE__ ),
 		$script_data['dependencies'],
-		$script_data['version'],
+		$script_data['version']
 	);
 
 	register_block_type( 'sortabrilliant/stream-share', [
