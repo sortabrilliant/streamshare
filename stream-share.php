@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: StreamShare
- * Plugin URI:  https://sortabrilliant.com/
- * Description: Advanced Twitch embed block for the Gutenberg.
+ * Plugin URI:  https://sortabrilliant.com/streamshare/
+ * Description: StreamShare for Twitch is the best way to share your Twitch content on your WordPress site
  * Author:      sorta brilliant
  * Author URI:  https://sortabrilliant.com/
  * Version:     1.0.0
