@@ -27,7 +27,7 @@ You don't even need to add the Twitch block. Just paste a Twitch link into a par
 == Screenshots ==
 1. Add the block.
 2. Give us a link.
-3. We take care of the rest.
+3. We'll take care of the rest.
 
 == Changelog ==
 1.0.0 initial commit
