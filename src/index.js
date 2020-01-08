@@ -22,6 +22,11 @@ registerBlockType( name, {
 	attributes,
 	edit,
 	save,
+	example: {
+		attributes: {
+			src: 'https://player.twitch.tv/?channel=backlogathon&autoplay=false'
+		}
+	},
 	transforms: {
 		from: [
 			{
