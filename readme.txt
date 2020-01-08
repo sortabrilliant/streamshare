@@ -3,7 +3,7 @@ Contributors: sortabrilliant, mamaduka
 Tags: twitch, video, stream
 Donate link: https://sortabrilliant.com/streamshare/
 Requires at least: 5.0
-Tested up to: 5.3.1
+Tested up to: 5.3.2
 Requires PHP: 5.6
 Stable tag: trunk
 License: GPL-2.0-or-later
@@ -25,4 +25,4 @@ We support the embedding of:
 You don't even need to add the Twitch block. Just paste a Twitch link into a paragraph block and we'll do the rest.
 
 == Changelog ==
-1.0.0 Initial Commit
+1.0.0 initial commit
