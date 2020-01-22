@@ -15,26 +15,6 @@
 namespace SortaBrilliant\StreamShare;
 
 /**
- * Get the script data.
- *
- * @param string $path     File path.
- * @param string $dir      Directory.
- * @return array $data
- */
-function get_script_data( $path, $dir ) {
-	$pathinfo  = pathinfo( trailingslashit( $dir ) . $path );
-	$file_path = "{$pathinfo['dirname']}/{$pathinfo['filename']}.asset.php";
-
-	if ( ! file_exists( $file_path ) ) {
-		return [ 'dependencies' => [], 'version' => false ];
-	}
-
-	$data = require $file_path;
-
-	return $data;
-}
-
-/**
  * Registers the block and required assets.
  *
  * @return void
@@ -44,14 +24,13 @@ function register_block() {
 		return;
 	}
 
-	$script_path = 'build/index.js';
-	$script_data = get_script_data( $script_path, __DIR__ );
+	$asset_file = include __DIR__ . '/build/index.asset.php';
 
 	wp_register_script(
 		'stream-share',
-		plugins_url( $script_path, __FILE__ ),
-		$script_data['dependencies'],
-		$script_data['version']
+		plugins_url( 'build/index.js', __FILE__ ),
+		$asset_file['dependencies'],
+		$asset_file['version']
 	);
 
 	register_block_type( 'sortabrilliant/stream-share', [
