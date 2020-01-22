@@ -5,7 +5,7 @@
  * Description: StreamShare for Twitch is the best way to share your Twitch content on your WordPress site
  * Author:      sorta brilliant
  * Author URI:  https://sortabrilliant.com/
- * Version:     1.0.1
+ * Version:     1.0.2
  * License:     GPL-2.0-or-later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *

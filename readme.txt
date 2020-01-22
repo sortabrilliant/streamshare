@@ -30,5 +30,6 @@ You don't even need to add the Twitch block. Just paste a Twitch link into a par
 3. We'll take care of the rest.
 
 == Changelog ==
+1.0.2 Adds Github deploy actions
 1.0.1 Remove development files from the release builds
 1.0.0 initial commit
