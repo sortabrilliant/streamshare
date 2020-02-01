@@ -1,7 +1,6 @@
 === StreamShare for Twitch ===
 Contributors: sortabrilliant, mamaduka
 Tags: twitch, video, stream
-Donate link: https://sortabrilliant.com/streamshare/
 Requires at least: 5.0
 Tested up to: 5.3.2
 Requires PHP: 5.6
