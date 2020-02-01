@@ -11,3 +11,7 @@ We support the embedding of:
 * Videos from collections: https://www.twitch.tv/videos/510127216?collection=VNsQ6mVT2BWRPg
 
 You don't even need to add the Twitch block. Just paste a Twitch link into a paragraph block and we'll do the rest.
+
+https://ps.w.org/streamshare/assets/screenshot-2.png?rev=2226656
+
+![streamshare](https://ps.w.org/streamshare/assets/screenshot-2.png?rev=2226656 "StreamShare")
