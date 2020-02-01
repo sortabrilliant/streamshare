@@ -1,10 +1,10 @@
 === StreamShare for Twitch ===
 Contributors: sortabrilliant, mamaduka
-Tags: twitch, video, stream
+Tags: twitch, video, stream, block
 Requires at least: 5.0
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: trunk
+Stable tag: 1.0.2
 License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -23,12 +23,15 @@ We support the embedding of:
 
 You don't even need to add the Twitch block. Just paste a Twitch link into a paragraph block and we'll do the rest.
 
+#### I like this, who made it?
+This plugin is brought to you by [sorta brilliant](https://sortabrilliant.com/) and [block garden](https://block.garden).
+
 == Screenshots ==
 1. Add the block.
 2. Give us a link.
 3. We'll take care of the rest.
 
 == Changelog ==
-1.0.2 Adds Github deploy actions
-1.0.1 Remove development files from the release builds
-1.0.0 initial commit
+* 1.0.2 Adds Github deploy actions
+* 1.0.1 Remove development files from the release builds
+* 1.0.0 Initial commit
