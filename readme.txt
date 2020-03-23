@@ -2,9 +2,9 @@
 Contributors: sortabrilliant, mamaduka
 Tags: twitch, video, stream, block
 Requires at least: 5.0
-Tested up to: 5.3.2
+Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -17,7 +17,7 @@ We support the embedding of:
 
 * Livestreams: [https://www.twitch.tv/backlogathon/](https://www.twitch.tv/backlogathon/)
 * Videos: [https://www.twitch.tv/videos/510127216](https://www.twitch.tv/videos/510127216)
-* Clips: [https://www.twitch.tv/backlogathon/clip/BenevolentWimpyRabbitPhilosoraptor](https://www.twitch.tv/backlogathon/clip/BenevolentWimpyRabbitPhilosoraptor) 
+* Clips: [https://www.twitch.tv/backlogathon/clip/BenevolentWimpyRabbitPhilosoraptor](https://www.twitch.tv/backlogathon/clip/BenevolentWimpyRabbitPhilosoraptor)
 * Collections: [https://www.twitch.tv/collections/VNsQ6mVT2BWRPg](https://www.twitch.tv/collections/VNsQ6mVT2BWRPg)
 * Videos from collections: [https://www.twitch.tv/videos/510127216?collection=VNsQ6mVT2BWRPg](https://www.twitch.tv/videos/510127216?collection=VNsQ6mVT2BWRPg)
 
@@ -32,6 +32,7 @@ This plugin is brought to you by [sorta brilliant](https://sortabrilliant.com/) 
 3. We'll take care of the rest.
 
 == Changelog ==
+* 1.0.3 Update "Tested up to" WordPress version.
 * 1.0.2 Adds Github deploy actions
 * 1.0.1 Remove development files from the release builds
 * 1.0.0 Initial commit
