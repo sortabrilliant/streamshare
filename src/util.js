@@ -31,12 +31,12 @@ export const findVideoType = ( url ) => {
 	let type = { type: null, src: null };
 
 	for ( const provider of providers ) {
-		const found = url.match( provider.regex );
+		const [ , id ] = url.match( provider.regex ) || [];
 
-		if ( found !== null && found[ 1 ] !== undefined ) {
+		if ( id ) {
 			type = {
 				type: provider.type,
-				src: `${ provider.src }${ found[ 1 ] }&autoplay=false`,
+				src: `${ provider.src }${ id }&autoplay=false`,
 			};
 		}
 	}
