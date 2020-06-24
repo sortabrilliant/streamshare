@@ -24,14 +24,19 @@ registerBlockType( name, {
 	save,
 	example: {
 		attributes: {
-			src: 'https://player.twitch.tv/?channel=backlogathon&autoplay=false'
-		}
+			src:
+				'https://player.twitch.tv/?channel=backlogathon&autoplay=false',
+		},
 	},
 	transforms: {
 		from: [
 			{
 				type: 'raw',
-				isMatch: ( node ) => node.nodeName === 'P' && /^\s*(https?:\/\/www\.twitch.tv\/\S+)\s*$/i.test( node.textContent ),
+				isMatch: ( node ) =>
+					node.nodeName === 'P' &&
+					/^\s*(https?:\/\/www\.twitch.tv\/\S+)\s*$/i.test(
+						node.textContent
+					),
 				transform: ( node ) => {
 					return createBlock( name, {
 						url: node.textContent.trim(),

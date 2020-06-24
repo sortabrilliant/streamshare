@@ -12,7 +12,9 @@ const EmbedPlaceholder = ( props ) => {
 			icon={ <BlockIcon icon={ icon } showColors /> }
 			label={ label }
 			className="wp-block-embed"
-			instructions={ 'Paste a link to the content you want to display on your site.' }
+			instructions={
+				'Paste a link to the content you want to display on your site.'
+			}
 		>
 			<form onSubmit={ onSubmit }>
 				<input
@@ -21,16 +23,16 @@ const EmbedPlaceholder = ( props ) => {
 					className="components-placeholder__input"
 					aria-label={ label }
 					placeholder={ 'Enter URL to embed here…' }
-					onChange={ onChange } />
-				<Button
-					isLarge
-					type="submit"
-				>
+					onChange={ onChange }
+				/>
+				<Button isLarge type="submit">
 					{ 'Embed' }
 				</Button>
 			</form>
 			<div className="components-placeholder__learn-more">
-				<ExternalLink href={ 'https://wordpress.org/support/article/embeds/' }>
+				<ExternalLink
+					href={ 'https://wordpress.org/support/article/embeds/' }
+				>
 					{ 'Learn more about embeds' }
 				</ExternalLink>
 			</div>

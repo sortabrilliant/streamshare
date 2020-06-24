@@ -18,17 +18,20 @@ describe( 'sortabrilliant/stream-share', () => {
 		const url = 'https://www.twitch.tv/backlogathon/';
 		const expected = {
 			type: 'channel',
-			src: 'https://player.twitch.tv/?channel=backlogathon&autoplay=false',
+			src:
+				'https://player.twitch.tv/?channel=backlogathon&autoplay=false',
 		};
 
 		expect( findVideoType( url ) ).toEqual( expected );
 	} );
 
 	test( 'findVideoType matches URL to clip type', () => {
-		const url = 'https://www.twitch.tv/backlogathon/clip/BenevolentWimpyRabbitPhilosoraptor';
+		const url =
+			'https://www.twitch.tv/backlogathon/clip/BenevolentWimpyRabbitPhilosoraptor';
 		const expected = {
 			type: 'clip',
-			src: 'https://clips.twitch.tv/embed?clip=BenevolentWimpyRabbitPhilosoraptor&autoplay=false',
+			src:
+				'https://clips.twitch.tv/embed?clip=BenevolentWimpyRabbitPhilosoraptor&autoplay=false',
 		};
 
 		expect( findVideoType( url ) ).toEqual( expected );
@@ -38,17 +41,20 @@ describe( 'sortabrilliant/stream-share', () => {
 		const url = 'https://www.twitch.tv/collections/VNsQ6mVT2BWRPg';
 		const expected = {
 			type: 'collection',
-			src: 'https://player.twitch.tv/?collection=VNsQ6mVT2BWRPg&autoplay=false',
+			src:
+				'https://player.twitch.tv/?collection=VNsQ6mVT2BWRPg&autoplay=false',
 		};
 
 		expect( findVideoType( url ) ).toEqual( expected );
 	} );
 
 	test( 'findVideoType matches URL to video type from collection', () => {
-		const url = 'https://www.twitch.tv/videos/510127216?collection=VNsQ6mVT2BWRPg';
+		const url =
+			'https://www.twitch.tv/videos/510127216?collection=VNsQ6mVT2BWRPg';
 		const expected = {
 			type: 'collection',
-			src: 'https://player.twitch.tv/?collection=VNsQ6mVT2BWRPg&autoplay=false',
+			src:
+				'https://player.twitch.tv/?collection=VNsQ6mVT2BWRPg&autoplay=false',
 		};
 
 		expect( findVideoType( url ) ).toEqual( expected );

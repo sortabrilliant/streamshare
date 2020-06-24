@@ -49,7 +49,9 @@ export const findVideoType = ( url ) => {
 		if ( params.has( 'collection' ) ) {
 			type = {
 				type: 'collection',
-				src: `https://player.twitch.tv/?collection=${ params.get( 'collection' ) }&autoplay=false`,
+				src: `https://player.twitch.tv/?collection=${ params.get(
+					'collection'
+				) }&autoplay=false`,
 			};
 		}
 	}
@@ -66,7 +68,7 @@ export const getIframeHtml = ( src ) => {
 			height="360"
 			frameBorder="0"
 			scrolling="no"
-			allowFullScreen={ true }>
-		</iframe>
+			allowFullScreen={ true }
+		></iframe>
 	);
 };

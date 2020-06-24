@@ -14,9 +14,7 @@ const save = ( { attributes } ) => {
 
 	return (
 		<figure className="wp-block-embed-twitch wp-block-embed is-type-video">
-			<div className="wp-block-embed__wrapper">
-				{ html }
-			</div>
+			<div className="wp-block-embed__wrapper">{ html }</div>
 		</figure>
 	);
 };

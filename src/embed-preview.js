@@ -44,9 +44,12 @@ class EmbedPreview extends Component {
 					title="Embedded content from twitch.tv"
 					onFocus={ this.hideOverlay }
 				/>
-				{ ! interactive && <div
-					className="block-library-embed__interactive-overlay"
-					onMouseUp={ this.hideOverlay } /> }
+				{ ! interactive && (
+					<div
+						className="block-library-embed__interactive-overlay"
+						onMouseUp={ this.hideOverlay }
+					/>
+				) }
 			</div>
 		);
 		/* eslint-enable jsx-a11y/no-static-element-interactions */

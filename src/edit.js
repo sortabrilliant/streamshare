@@ -55,7 +55,9 @@ class TwitchEmbedEdit extends Component {
 					label={ label }
 					onSubmit={ this.setUrl }
 					value={ url }
-					onChange={ ( event ) => this.setState( { url: event.target.value } ) }
+					onChange={ ( event ) =>
+						this.setState( { url: event.target.value } )
+					}
 				/>
 			);
 		}
