@@ -1,4 +1,9 @@
 /**
+ * WordPress dependencies
+ */
+import { Component } from '@wordpress/element';
+
+/**
  * Internal dependencies
  */
 import { findVideoType } from './util';
@@ -6,11 +11,6 @@ import icon from './icon';
 import EmbedPreview from './embed-preview';
 import EmbedControls from './embed-controls';
 import EmbedPlaceholder from './embed-placeholder';
-
-/**
- * WordPress dependencies
- */
-import { Component } from '@wordpress/element';
 
 class TwitchEmbedEdit extends Component {
 	constructor() {

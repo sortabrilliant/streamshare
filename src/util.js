@@ -1,3 +1,8 @@
+/**
+ * WordPress dependencies
+ */
+import { addQueryArgs, getQueryArg, hasQueryArg } from '@wordpress/url';
+
 const providers = [
 	{
 		type: 'channel',
@@ -36,30 +41,30 @@ export const findVideoType = ( url ) => {
 		if ( id ) {
 			type = {
 				type: provider.type,
-				src: `${ provider.src }${ id }&autoplay=false`,
+				src: `${ provider.src }${ id }`,
 			};
 		}
 	}
 
 	// Handle case when video URL is part of the collection.
-	if ( type.type === 'videos' && url.includes( '?' ) ) {
-		const parts = url.split( '?' );
-		const params = new URLSearchParams( parts[ 1 ] );
+	if ( type.type === 'videos' && hasQueryArg( url, 'collection' ) ) {
+		const collection = getQueryArg( url, 'collection' );
 
-		if ( params.has( 'collection' ) ) {
-			type = {
-				type: 'collection',
-				src: `https://player.twitch.tv/?collection=${ params.get(
-					'collection'
-				) }&autoplay=false`,
-			};
-		}
+		type = {
+			type: 'collection',
+			src: `https://player.twitch.tv/?collection=${ collection }`,
+		};
 	}
 
 	return type;
 };
 
 export const getIframeHtml = ( src ) => {
+	src = addQueryArgs( src, {
+		parent: 'gutenberg.test',
+		autoplay: false,
+	} );
+
 	return (
 		<iframe
 			src={ src }
