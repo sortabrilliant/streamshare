@@ -1,7 +1,7 @@
 /**
  * Internal dependencies
  */
-import { getIframeHtml } from './util';
+import { findVideoType, getIframeHtml } from './util';
 
 /**
  * WordPress dependencies
@@ -31,10 +31,10 @@ class EmbedPreview extends Component {
 	}
 
 	render() {
-		const { src } = this.props;
 		const { interactive } = this.state;
 
-		const html = getIframeHtml( src );
+		const type = findVideoType( this.props.url );
+		const html = getIframeHtml( type.src );
 
 		/* eslint-disable jsx-a11y/no-static-element-interactions */
 		const embedWrapper = (

@@ -1,8 +1,15 @@
 /**
  * WordPress dependencies
  */
-import { addQueryArgs, getQueryArg, hasQueryArg } from '@wordpress/url';
+import {
+	addQueryArgs,
+	getQueryArg,
+	hasQueryArg,
+	filterURLForDisplay,
+} from '@wordpress/url';
 
+const { homeUrl } = window.StreamShare || {};
+const displayUrl = filterURLForDisplay( homeUrl );
 const providers = [
 	{
 		type: 'channel',
@@ -61,7 +68,7 @@ export const findVideoType = ( url ) => {
 
 export const getIframeHtml = ( src ) => {
 	src = addQueryArgs( src, {
-		parent: 'gutenberg.test',
+		parent: displayUrl,
 		autoplay: false,
 	} );
 

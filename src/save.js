@@ -1,16 +1,16 @@
 /**
  * Internal dependencies
  */
-import { getIframeHtml } from './util';
+import { findVideoType, getIframeHtml } from './util';
 
 const save = ( { attributes } ) => {
-	const { src } = attributes;
+	const type = findVideoType( attributes.url );
 
-	if ( ! src ) {
+	if ( ! type.src ) {
 		return null;
 	}
 
-	const html = getIframeHtml( src );
+	const html = getIframeHtml( type.src );
 
 	return (
 		<figure className="wp-block-embed-twitch wp-block-embed is-type-video">

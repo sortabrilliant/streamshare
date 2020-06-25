@@ -33,6 +33,10 @@ function register_block() {
 		$asset_file['version']
 	);
 
+	wp_localize_script( 'stream-share', 'StreamShare', [
+		'homeUrl' => esc_url_raw( home_url() ),
+	] );
+
 	register_block_type( 'sortabrilliant/stream-share', [
 		'editor_script' => 'stream-share',
 	] );

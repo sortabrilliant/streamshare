@@ -6,7 +6,6 @@ import { Component } from '@wordpress/element';
 /**
  * Internal dependencies
  */
-import { findVideoType } from './util';
 import icon from './icon';
 import EmbedPreview from './embed-preview';
 import EmbedControls from './embed-controls';
@@ -31,10 +30,9 @@ class TwitchEmbedEdit extends Component {
 
 		const { url } = this.state;
 		const { setAttributes } = this.props;
-		const { src, type } = findVideoType( url );
 
 		this.setState( { editingURL: false } );
-		setAttributes( { url, src, type } );
+		setAttributes( { url } );
 	}
 
 	switchBackToURLInput() {
@@ -43,12 +41,11 @@ class TwitchEmbedEdit extends Component {
 
 	render() {
 		const { url, editingURL } = this.state;
-		const { isSelected } = this.props;
-		const { src } = this.props.attributes;
+		const { attributes, isSelected } = this.props;
 
 		const label = 'Twitch URL';
 
-		if ( ! src || editingURL ) {
+		if ( ! attributes.url || editingURL ) {
 			return (
 				<EmbedPlaceholder
 					icon={ icon }
@@ -65,12 +62,11 @@ class TwitchEmbedEdit extends Component {
 		return (
 			<>
 				<EmbedControls
-					showEditButton={ src }
+					showEditButton={ attributes.url }
 					switchBackToURLInput={ this.switchBackToURLInput }
 				/>
 				<EmbedPreview
-					src={ src }
-					url={ url }
+					url={ attributes.url }
 					isSelected={ isSelected }
 					icon={ icon }
 					label={ label }
