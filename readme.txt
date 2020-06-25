@@ -32,6 +32,7 @@ This plugin is brought to you by [sorta brilliant](https://sortabrilliant.com/) 
 3. We'll take care of the rest.
 
 == Changelog ==
+* 1.1.0 Updates embed URLs to match new Twitch guidelines.
 * 1.0.3 Update "Tested up to" WordPress version.
 * 1.0.2 Adds Github deploy actions
 * 1.0.1 Remove development files from the release builds
