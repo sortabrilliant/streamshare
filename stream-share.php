@@ -1,13 +1,15 @@
 <?php
 /**
- * Plugin Name: StreamShare
- * Plugin URI:  https://sortabrilliant.com/streamshare/
- * Description: StreamShare for Twitch is the best way to share your Twitch content on your WordPress site
- * Author:      sorta brilliant
- * Author URI:  https://sortabrilliant.com/
- * Version:     1.1.0
- * License:     GPL-2.0-or-later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * Plugin Name:       StreamShare
+ * Plugin URI:        https://sortabrilliant.com/streamshare/
+ * Description:       StreamShare for Twitch is the best way to share your Twitch content on your WordPress site
+ * Version:           1.1.1
+ * Requires at least: 5.0
+ * Requires PHP:      5.6
+ * Author:            sorta brilliant
+ * Author URI:        https://sortabrilliant.com/
+ * License:           GPL-2.0-or-later
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  *
  * @package StreamShare
  */

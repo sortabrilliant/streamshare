@@ -2,9 +2,9 @@
 Contributors: sortabrilliant, mamaduka
 Tags: twitch, video, stream, block
 Requires at least: 5.0
-Tested up to: 5.4
+Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -32,6 +32,7 @@ This plugin is brought to you by [sorta brilliant](https://sortabrilliant.com/) 
 3. We'll take care of the rest.
 
 == Changelog ==
+* 1.1.1 Bump "Tested up to" WordPress version.
 * 1.1.0 Updates embed URLs to match new Twitch guidelines.
 * 1.0.3 Update "Tested up to" WordPress version.
 * 1.0.2 Adds Github deploy actions
